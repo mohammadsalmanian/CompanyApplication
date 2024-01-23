@@ -1,0 +1,113 @@
+    <!--  ==========  -->
+    <!--  = Slider Revolution =  -->
+    <!--  ==========  -->
+    <div class="fullwidthbanner-container">
+        <div class="fullwidthbanner">
+            <ul *ngIf="sliderList .length>0 && sliderList !== null">
+                <li data-transition="premium-random"  data-slotamount="3" *ngFor="let item of sliderList">
+                    <img [src]="domain+'/images/sliders/orgin/'+item.imageName" alt="slider img" width="1400" height="377" />
+                    
+                    <!-- baloons -->
+                    <div class="caption lft ltt"
+                        data-x="570" 
+                        data-y="50"
+                        data-speed="4000" 
+                        data-start="1000" 
+                        data-easing="easeOutElastic">
+                        <img src="/assets/images/dummy/slides/1/baloon1.png" alt="baloon" width="135" height="186" />
+                    </div>
+                    
+                    <div class="caption lft ltt"
+                        data-x="770" 
+                        data-y="60"
+                        data-speed="4000" 
+                        data-start="1200" 
+                        data-easing="easeOutElastic">
+                        <img src="/assets/images/dummy/slides/1/baloon3.png" alt="baloon" width="40" height="55" />
+                    </div>
+                    
+                    <div class="caption lft ltt"
+                        data-x="870" 
+                        data-y="80"
+                        data-speed="4000" 
+                        data-start="1500" 
+                        data-easing="easeOutElastic">
+                        <img src="/assets/images/dummy/slides/1/baloon2.png" alt="baloon" width="60" height="83" />
+                    </div>
+                    
+                    <!-- texts -->
+                    <div class="caption lfl big_theme"
+                        data-x="120" 
+                        data-y="120"
+                        data-speed="1000" 
+                        data-start="500" 
+                        data-easing="easeInOutBack">
+                        با وبمارکت، هیچ محدودیتی ندارید
+                    </div>
+                    
+                    <div class="caption lfl small_theme"
+                        data-x="120" 
+                        data-y="190"
+                        data-speed="1000" 
+                        data-start="700" 
+                        data-easing="easeInOutBack">
+                        با امکانات قالب HTML وبمارکت آشنا شوید
+                    </div>
+                    
+                    <a href="features.html" class="caption lfl btn btn-primary btn_theme"
+                        data-x="120" 
+                        data-y="260"
+                        data-speed="1000" 
+                        data-start="900" 
+                        data-easing="easeInOutBack">
+                        تمامی امکانات قالب
+                    </a>
+                </li><!-- /slide -->
+            </ul>
+            <div class="tp-bannertimer"></div>
+        </div>
+        <!--  ==========  -->
+        <!--  = Nav Arrows =  -->
+        <!--  ==========  -->
+        <div id="sliderRevLeft"><i class="icon-chevron-left"></i></div>
+        <div id="sliderRevRight"><i class="icon-chevron-right"></i></div>
+    </div> <!-- /slider revolution -->
+
+    <!--  ==========  -->
+    <!--  = Main container =  -->
+    <!--  ==========  -->
+    <div class="container">
+        <div class="row">
+            <div class="span12">
+                <div class="push-up over-slider blocks-spacer">
+                    
+                    <!--  ==========  -->
+                    <!--  = Three Banners =  -->
+                    <!--  ==========  -->
+                    <div class="row">
+                        <div class="span4">
+                            <a href="#" class="btn btn-block banner">
+                                <span class="title"><span class="light">فروش</span> تابستانی</span>
+                                <em>تا 60% تخفیف روی کفش ها</em>
+                            </a>
+                        </div>
+                        <div class="span4">
+                            <a href="#" class="btn btn-block colored banner">
+                                <span class="title"><span class="light">ارسال</span> رایگان</span>
+                                <em>برای خرید های بیش از 69000 تومان</em>
+                            </a>
+                        </div>
+                        <div class="span4">
+                            <a href="#" class="btn btn-block banner">
+                                <span class="title"><span class="light">محصولات</span> جدید</span>
+                                <em>از محصولات جدید دیدن کنید.</em>
+                            </a>
+                        </div>
+                    </div> <!-- /three banners -->
+                </div>
+            </div>
+        </div>
+        
+      
+    </div> <!-- /container -->
+    

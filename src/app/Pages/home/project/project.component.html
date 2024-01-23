@@ -1,0 +1,54 @@
+<!--  ==========  -->
+<!--  = New Products =  -->
+<!--  ==========  -->
+<div class="boxed-area blocks-spacer">
+    <div class="container">
+
+        <!--  ==========  -->
+        <!--  = Title =  -->
+        <!--  ==========  -->
+        <div class="row">
+            <div class="span12">
+                <div class="main-titles lined">
+                    <h2 class="title"><span class="light">محصولات</span> جدید فروشگاه</h2>
+                </div>
+            </div>
+        </div> <!-- /title -->
+
+        <div class="row popup-products blocks-spacer">
+            <app-rejester-project></app-rejester-project>
+            <section id="TableProject">
+                <h5><span class="light">اطلاعات</span> پروژه</h5>
+                <table class="table table-bordered table-hover">
+                    <thead>
+                        <tr>
+                            <th>کد</th>
+                            <th>نام </th>
+                            <th>فامیلی</th>
+                            <th>ایمیل</th>
+                            <th> عملیات</th>
+                        </tr>
+                    </thead>
+                    <tbody *ngFor="let item of ProjectList">
+
+                        <tr>
+                            <!-- <td><input type='text' #myName  placeholder="myName" [value]="item.name" /></td> -->
+                            <td>{{item.id}}</td>
+                            <td>{{item.firstName}}</td>
+                            <td>{{item.lastName}}</td>
+                            <td>{{item.email}}</td>
+                            <td><button class="btn btn-danger btn-large bold rounded"
+                                    (click)="RemoveProject(item.id)">حذف</button></td>
+                        </tr>
+
+
+
+                    </tbody>
+                </table>
+            </section>
+
+
+
+        </div>
+    </div>
+</div> <!-- /new products -->
